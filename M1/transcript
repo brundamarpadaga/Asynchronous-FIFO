@@ -1,0 +1,145 @@
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:34:13 on Apr 24,2024
+# vlog -reportprogress 300 fifo_memory.sv 
+# -- Compiling module fifomem
+# 
+# Top level modules:
+# 	fifomem
+# End time: 16:34:13 on Apr 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:34:13 on Apr 24,2024
+# vlog -reportprogress 300 TOP.sv 
+# -- Compiling module async_fifo1
+# 
+# Top level modules:
+# 	async_fifo1
+# End time: 16:34:13 on Apr 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:34:13 on Apr 24,2024
+# vlog -reportprogress 300 r_pointer_epty.sv 
+# -- Compiling module rptr_empty
+# 
+# Top level modules:
+# 	rptr_empty
+# End time: 16:34:13 on Apr 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:34:13 on Apr 24,2024
+# vlog -reportprogress 300 w_ptr_wfull.sv 
+# -- Compiling module wptr_full
+# 
+# Top level modules:
+# 	wptr_full
+# End time: 16:34:14 on Apr 24,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:34:14 on Apr 24,2024
+# vlog -reportprogress 300 sync_r2w.sv 
+# -- Compiling module sync_r2w
+# 
+# Top level modules:
+# 	sync_r2w
+# End time: 16:34:14 on Apr 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:34:14 on Apr 24,2024
+# vlog -reportprogress 300 syncw2r.sv 
+# -- Compiling module sync_w2r
+# 
+# Top level modules:
+# 	sync_w2r
+# End time: 16:34:14 on Apr 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:34:14 on Apr 24,2024
+# vlog -reportprogress 300 testbench.sv 
+# -- Compiling module async_fifo1_tb
+# 
+# Top level modules:
+# 	async_fifo1_tb
+# End time: 16:34:14 on Apr 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:34:16 on Apr 24,2024, Elapsed time: 0:00:17
+# Errors: 0, Warnings: 0
+# vsim work.async_fifo1_tb 
+# Start time: 16:34:16 on Apr 24,2024
+# Loading sv_std.std
+# Loading work.async_fifo1_tb
+# Loading work.async_fifo1
+# Loading work.sync_r2w
+# Loading work.sync_w2r
+# Loading work.fifomem
+# Loading work.rptr_empty
+# Loading work.wptr_full
+# Checking rdata: PASSED at time 76000	expected wdata = e7, rdata = e7
+# Checking rdata: PASSED at time 92000	expected wdata = 7c, rdata = 7c
+# Checking rdata: PASSED at time 108000	expected wdata = 9c, rdata = 9c
+# Checking rdata: PASSED at time 124000	expected wdata = 1c, rdata = 1c
+# Checking rdata: PASSED at time 140000	expected wdata = e8, rdata = e8
+# Checking rdata: PASSED at time 156000	expected wdata = a7, rdata = a7
+# Checking rdata: PASSED at time 172000	expected wdata = 16, rdata = 16
+# Checking rdata: PASSED at time 188000	expected wdata = c4, rdata = c4
+# Checking rdata: PASSED at time 204000	expected wdata = 00, rdata = 00
+# Checking rdata: PASSED at time 220000	expected wdata = 59, rdata = 59
+# Checking rdata: PASSED at time 236000	expected wdata = f8, rdata = f8
+# Checking rdata: PASSED at time 252000	expected wdata = fb, rdata = fb
+# Checking rdata: PASSED at time 268000	expected wdata = 11, rdata = 11
+# Checking rdata: PASSED at time 284000	expected wdata = a2, rdata = a2
+# Checking rdata: PASSED at time 300000	expected wdata = fc, rdata = fc
+# Checking rdata: PASSED at time 316000	expected wdata = a5, rdata = a5
+# Checking rdata: PASSED at time 332000	expected wdata = de, rdata = de
+# Checking rdata: PASSED at time 348000	expected wdata = 96, rdata = 96
+# Checking rdata: PASSED at time 364000	expected wdata = 90, rdata = 90
+# Checking rdata: PASSED at time 380000	expected wdata = 17, rdata = 17
+# Checking rdata: PASSED at time 396000	expected wdata = de, rdata = de
+# Checking rdata: PASSED at time 412000	expected wdata = 83, rdata = 83
+# Checking rdata: PASSED at time 428000	expected wdata = 86, rdata = 86
+# Checking rdata: PASSED at time 444000	expected wdata = 14, rdata = 14
+# Checking rdata: PASSED at time 460000	expected wdata = cd, rdata = cd
+# Checking rdata: PASSED at time 476000	expected wdata = 5c, rdata = 5c
+# Checking rdata: PASSED at time 492000	expected wdata = 4f, rdata = 4f
+# Checking rdata: PASSED at time 508000	expected wdata = b2, rdata = b2
+# Checking rdata: PASSED at time 524000	expected wdata = 97, rdata = 97
+# Checking rdata: PASSED at time 540000	expected wdata = ff, rdata = ff
+# Checking rdata: PASSED at time 556000	expected wdata = 1e, rdata = 1e
+# Checking rdata: PASSED at time 572000	expected wdata = ac, rdata = ac
+# Checking rdata: PASSED at time 1580000	expected wdata = 2c, rdata = 2c
+# Checking rdata: PASSED at time 1596000	expected wdata = e4, rdata = e4
+# Checking rdata: PASSED at time 1612000	expected wdata = 9e, rdata = 9e
+# Checking rdata: PASSED at time 1628000	expected wdata = 85, rdata = 85
+# Checking rdata: PASSED at time 1644000	expected wdata = b2, rdata = b2
+# Checking rdata: PASSED at time 1660000	expected wdata = 9b, rdata = 9b
+# Checking rdata: PASSED at time 1676000	expected wdata = 52, rdata = 52
+# Checking rdata: PASSED at time 1692000	expected wdata = ad, rdata = ad
+# Checking rdata: PASSED at time 1708000	expected wdata = 31, rdata = 31
+# Checking rdata: PASSED at time 1724000	expected wdata = 18, rdata = 18
+# Checking rdata: PASSED at time 1740000	expected wdata = 99, rdata = 99
+# Checking rdata: PASSED at time 1756000	expected wdata = c0, rdata = c0
+# Checking rdata: PASSED at time 1772000	expected wdata = 02, rdata = 02
+# Checking rdata: PASSED at time 1788000	expected wdata = 8c, rdata = 8c
+# Checking rdata: PASSED at time 1804000	expected wdata = e1, rdata = e1
+# Checking rdata: PASSED at time 1820000	expected wdata = 88, rdata = 88
+# Checking rdata: PASSED at time 1836000	expected wdata = 2f, rdata = 2f
+# Checking rdata: PASSED at time 1852000	expected wdata = 35, rdata = 35
+# Checking rdata: PASSED at time 1868000	expected wdata = 14, rdata = 14
+# Checking rdata: PASSED at time 1884000	expected wdata = 0f, rdata = 0f
+# Checking rdata: PASSED at time 1900000	expected wdata = 11, rdata = 11
+# Checking rdata: PASSED at time 1916000	expected wdata = 2d, rdata = 2d
+# Checking rdata: PASSED at time 1932000	expected wdata = 48, rdata = 48
+# Checking rdata: PASSED at time 1948000	expected wdata = d7, rdata = d7
+# Checking rdata: PASSED at time 1964000	expected wdata = 1d, rdata = 1d
+# Checking rdata: PASSED at time 1980000	expected wdata = c1, rdata = c1
+# Checking rdata: PASSED at time 1996000	expected wdata = f5, rdata = f5
+# Checking rdata: PASSED at time 2012000	expected wdata = 98, rdata = 98
+# Checking rdata: PASSED at time 2028000	expected wdata = 82, rdata = 82
+# Checking rdata: PASSED at time 2044000	expected wdata = 82, rdata = 82
+# Checking rdata: PASSED at time 2060000	expected wdata = 71, rdata = 71
+# Checking rdata: PASSED at time 2076000	expected wdata = c1, rdata = c1
+# ** Note: $finish    : testbench.sv(70)
+#    Time: 3084 ns  Iteration: 0  Instance: /async_fifo1_tb
+# 1
+# Break in Module async_fifo1_tb at testbench.sv line 70
