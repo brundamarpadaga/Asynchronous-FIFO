@@ -1,0 +1,361 @@
+# =================================================================================
+# === Instance: /testbench/topdesign/write_ptr_inst
+# === Design Unit: work.write_ptr
+# =================================================================================
+# 
+# Assertion Coverage:
+#     Assertions                       2         2         0   100.00%
+# --------------------------------------------------------------------
+# Name                 File(Line)                   Failure      Pass 
+#                                                   Count        Count
+# --------------------------------------------------------------------
+# /testbench/topdesign/write_ptr_inst/a_reset
+#                      write_ptr.sv(44)                   0          1
+# /testbench/topdesign/write_ptr_inst/a_full
+#                      write_ptr.sv(53)                   0          1
+# 
+# =================================================================================
+# === Instance: /testbench/topdesign/read_ptr_inst
+# === Design Unit: work.read_ptr
+# =================================================================================
+# 
+# Assertion Coverage:
+#     Assertions                       2         2         0   100.00%
+# --------------------------------------------------------------------
+# Name                 File(Line)                   Failure      Pass 
+#                                                   Count        Count
+# --------------------------------------------------------------------
+# /testbench/topdesign/read_ptr_inst/a_rreset
+#                      read_ptr.sv(46)                    0          1
+# /testbench/topdesign/read_ptr_inst/a_empty
+#                      read_ptr.sv(55)                    0          1
+# 
+# =================================================================================
+# === Instance: /testbench/coverage
+# === Design Unit: work.coverage
+# =================================================================================
+# 
+# Covergroup Coverage:
+#     Covergroups                      2        na        na    91.66%
+#         Coverpoints/Crosses         12        na        na        na
+#             Covergroup Bins         22        20         2    90.90%
+# ----------------------------------------------------------------------------------------------------------
+# Covergroup                                             Metric       Goal       Bins    Status               
+#                                                                                                          
+# ----------------------------------------------------------------------------------------------------------
+#  TYPE /testbench/coverage/test_write                   91.66%        100          -    Uncovered            
+#     covered/total bins:                                    10         11          -                      
+#     missing/total bins:                                     1         11          -                      
+#     % Hit:                                             90.90%        100          -                      
+#     Coverpoint c0                                     100.00%        100          -    Covered              
+#         covered/total bins:                                 2          2          -                      
+#         missing/total bins:                                 0          2          -                      
+#         % Hit:                                        100.00%        100          -                      
+#     Coverpoint c1                                     100.00%        100          -    Covered              
+#         covered/total bins:                                 2          2          -                      
+#         missing/total bins:                                 0          2          -                      
+#         % Hit:                                        100.00%        100          -                      
+#     Coverpoint c2                                      50.00%        100          -    Uncovered            
+#         covered/total bins:                                 1          2          -                      
+#         missing/total bins:                                 1          2          -                      
+#         % Hit:                                         50.00%        100          -                      
+#     Coverpoint c3                                     100.00%        100          -    Covered              
+#         covered/total bins:                                 2          2          -                      
+#         missing/total bins:                                 0          2          -                      
+#         % Hit:                                        100.00%        100          -                      
+#     Coverpoint c4                                     100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#     Coverpoint c10                                    100.00%        100          -    Covered              
+#         covered/total bins:                                 2          2          -                      
+#         missing/total bins:                                 0          2          -                      
+#         % Hit:                                        100.00%        100          -                      
+#  Covergroup instance \/testbench/coverage/test_instw  
+#                                                        91.66%        100          -    Uncovered            
+#     covered/total bins:                                    10         11          -                      
+#     missing/total bins:                                     1         11          -                      
+#     % Hit:                                             90.90%        100          -                      
+#     Coverpoint c0                                     100.00%        100          -    Covered              
+#         covered/total bins:                                 2          2          -                      
+#         missing/total bins:                                 0          2          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin RESET_1                                        13          1          -    Covered              
+#         bin RESET_0                                      1549          1          -    Covered              
+#     Coverpoint c1                                     100.00%        100          -    Covered              
+#         covered/total bins:                                 2          2          -                      
+#         missing/total bins:                                 0          2          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin fifo_empty_1                                   13          1          -    Covered              
+#         bin fifo_empty_0                                 1549          1          -    Covered              
+#     Coverpoint c2                                      50.00%        100          -    Uncovered            
+#         covered/total bins:                                 1          2          -                      
+#         missing/total bins:                                 1          2          -                      
+#         % Hit:                                         50.00%        100          -                      
+#         bin fifo_full_1                                     0          1          -    ZERO                 
+#         bin fifo_full_0                                  1562          1          -    Covered              
+#     Coverpoint c3                                     100.00%        100          -    Covered              
+#         covered/total bins:                                 2          2          -                      
+#         missing/total bins:                                 0          2          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin write_1                                       511          1          -    Covered              
+#         bin write_0                                      1051          1          -    Covered              
+#     Coverpoint c4                                     100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin wr_data                                      1562          1          -    Covered              
+#     Coverpoint c10                                    100.00%        100          -    Covered              
+#         covered/total bins:                                 2          2          -                      
+#         missing/total bins:                                 0          2          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin read_1                                       1026          1          -    Covered              
+#         bin read_0                                        523          1          -    Covered              
+#  TYPE /testbench/coverage/test_read                    91.66%        100          -    Uncovered            
+#     covered/total bins:                                    10         11          -                      
+#     missing/total bins:                                     1         11          -                      
+#     % Hit:                                             90.90%        100          -                      
+#     Coverpoint c5                                     100.00%        100          -    Covered              
+#         covered/total bins:                                 2          2          -                      
+#         missing/total bins:                                 0          2          -                      
+#         % Hit:                                        100.00%        100          -                      
+#     Coverpoint c6                                     100.00%        100          -    Covered              
+#         covered/total bins:                                 2          2          -                      
+#         missing/total bins:                                 0          2          -                      
+#         % Hit:                                        100.00%        100          -                      
+#     Coverpoint c7                                     100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#     Coverpoint c8                                     100.00%        100          -    Covered              
+#         covered/total bins:                                 2          2          -                      
+#         missing/total bins:                                 0          2          -                      
+#         % Hit:                                        100.00%        100          -                      
+#     Coverpoint c9                                      50.00%        100          -    Uncovered            
+#         covered/total bins:                                 1          2          -                      
+#         missing/total bins:                                 1          2          -                      
+#         % Hit:                                         50.00%        100          -                      
+#     Coverpoint c11                                    100.00%        100          -    Covered              
+#         covered/total bins:                                 2          2          -                      
+#         missing/total bins:                                 0          2          -                      
+#         % Hit:                                        100.00%        100          -                      
+#  Covergroup instance \/testbench/coverage/test_instr  
+#                                                        91.66%        100          -    Uncovered            
+#     covered/total bins:                                    10         11          -                      
+#     missing/total bins:                                     1         11          -                      
+#     % Hit:                                             90.90%        100          -                      
+#     Coverpoint c5                                     100.00%        100          -    Covered              
+#         covered/total bins:                                 2          2          -                      
+#         missing/total bins:                                 0          2          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin read_1                                       1026          1          -    Covered              
+#         bin read_0                                        523          1          -    Covered              
+#     Coverpoint c6                                     100.00%        100          -    Covered              
+#         covered/total bins:                                 2          2          -                      
+#         missing/total bins:                                 0          2          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin r_rst_n_high                                   25          1          -    Covered              
+#         bin r_rst_n_low                                  1536          1          -    Covered              
+#     Coverpoint c7                                     100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin rd_data                                       510          1          -    Covered              
+#     Coverpoint c8                                     100.00%        100          -    Covered              
+#         covered/total bins:                                 2          2          -                      
+#         missing/total bins:                                 0          2          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin fifo_empty_1                                   12          1          -    Covered              
+#         bin fifo_empty_0                                 1549          1          -    Covered              
+#     Coverpoint c9                                      50.00%        100          -    Uncovered            
+#         covered/total bins:                                 1          2          -                      
+#         missing/total bins:                                 1          2          -                      
+#         % Hit:                                         50.00%        100          -                      
+#         bin fifo_full_1                                     0          1          -    ZERO                 
+#         bin fifo_full_0                                  1561          1          -    Covered              
+#     Coverpoint c11                                    100.00%        100          -    Covered              
+#         covered/total bins:                                 2          2          -                      
+#         missing/total bins:                                 0          2          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin write_1                                       510          1          -    Covered              
+#         bin write_0                                      1051          1          -    Covered              
+# 
+# =================================================================================
+# === Instance: /testbench_sv_unit
+# === Design Unit: work.testbench_sv_unit
+# =================================================================================
+# 
+# Assertion Coverage:
+#     Assertions                       2         2         0   100.00%
+# --------------------------------------------------------------------
+# Name                 File(Line)                   Failure      Pass 
+#                                                   Count        Count
+# --------------------------------------------------------------------
+# /testbench_sv_unit/generator/main/#anonblk#41483716#24#4#/#ublk#41483716#25/immed__31
+#                      gen_fifo.sv(31)                    0          1
+# /testbench_sv_unit/generator/main/#anonblk#41483716#24#4#/#ublk#41483716#25/immed__28
+#                      gen_fifo.sv(28)                    0          1
+# 
+# COVERGROUP COVERAGE:
+# ----------------------------------------------------------------------------------------------------------
+# Covergroup                                             Metric       Goal       Bins    Status               
+#                                                                                                          
+# ----------------------------------------------------------------------------------------------------------
+#  TYPE /testbench/coverage/test_write                   91.66%        100          -    Uncovered            
+#     covered/total bins:                                    10         11          -                      
+#     missing/total bins:                                     1         11          -                      
+#     % Hit:                                             90.90%        100          -                      
+#     Coverpoint c0                                     100.00%        100          -    Covered              
+#         covered/total bins:                                 2          2          -                      
+#         missing/total bins:                                 0          2          -                      
+#         % Hit:                                        100.00%        100          -                      
+#     Coverpoint c1                                     100.00%        100          -    Covered              
+#         covered/total bins:                                 2          2          -                      
+#         missing/total bins:                                 0          2          -                      
+#         % Hit:                                        100.00%        100          -                      
+#     Coverpoint c2                                      50.00%        100          -    Uncovered            
+#         covered/total bins:                                 1          2          -                      
+#         missing/total bins:                                 1          2          -                      
+#         % Hit:                                         50.00%        100          -                      
+#     Coverpoint c3                                     100.00%        100          -    Covered              
+#         covered/total bins:                                 2          2          -                      
+#         missing/total bins:                                 0          2          -                      
+#         % Hit:                                        100.00%        100          -                      
+#     Coverpoint c4                                     100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#     Coverpoint c10                                    100.00%        100          -    Covered              
+#         covered/total bins:                                 2          2          -                      
+#         missing/total bins:                                 0          2          -                      
+#         % Hit:                                        100.00%        100          -                      
+#  Covergroup instance \/testbench/coverage/test_instw  
+#                                                        91.66%        100          -    Uncovered            
+#     covered/total bins:                                    10         11          -                      
+#     missing/total bins:                                     1         11          -                      
+#     % Hit:                                             90.90%        100          -                      
+#     Coverpoint c0                                     100.00%        100          -    Covered              
+#         covered/total bins:                                 2          2          -                      
+#         missing/total bins:                                 0          2          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin RESET_1                                        13          1          -    Covered              
+#         bin RESET_0                                      1549          1          -    Covered              
+#     Coverpoint c1                                     100.00%        100          -    Covered              
+#         covered/total bins:                                 2          2          -                      
+#         missing/total bins:                                 0          2          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin fifo_empty_1                                   13          1          -    Covered              
+#         bin fifo_empty_0                                 1549          1          -    Covered              
+#     Coverpoint c2                                      50.00%        100          -    Uncovered            
+#         covered/total bins:                                 1          2          -                      
+#         missing/total bins:                                 1          2          -                      
+#         % Hit:                                         50.00%        100          -                      
+#         bin fifo_full_1                                     0          1          -    ZERO                 
+#         bin fifo_full_0                                  1562          1          -    Covered              
+#     Coverpoint c3                                     100.00%        100          -    Covered              
+#         covered/total bins:                                 2          2          -                      
+#         missing/total bins:                                 0          2          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin write_1                                       511          1          -    Covered              
+#         bin write_0                                      1051          1          -    Covered              
+#     Coverpoint c4                                     100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin wr_data                                      1562          1          -    Covered              
+#     Coverpoint c10                                    100.00%        100          -    Covered              
+#         covered/total bins:                                 2          2          -                      
+#         missing/total bins:                                 0          2          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin read_1                                       1026          1          -    Covered              
+#         bin read_0                                        523          1          -    Covered              
+#  TYPE /testbench/coverage/test_read                    91.66%        100          -    Uncovered            
+#     covered/total bins:                                    10         11          -                      
+#     missing/total bins:                                     1         11          -                      
+#     % Hit:                                             90.90%        100          -                      
+#     Coverpoint c5                                     100.00%        100          -    Covered              
+#         covered/total bins:                                 2          2          -                      
+#         missing/total bins:                                 0          2          -                      
+#         % Hit:                                        100.00%        100          -                      
+#     Coverpoint c6                                     100.00%        100          -    Covered              
+#         covered/total bins:                                 2          2          -                      
+#         missing/total bins:                                 0          2          -                      
+#         % Hit:                                        100.00%        100          -                      
+#     Coverpoint c7                                     100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#     Coverpoint c8                                     100.00%        100          -    Covered              
+#         covered/total bins:                                 2          2          -                      
+#         missing/total bins:                                 0          2          -                      
+#         % Hit:                                        100.00%        100          -                      
+#     Coverpoint c9                                      50.00%        100          -    Uncovered            
+#         covered/total bins:                                 1          2          -                      
+#         missing/total bins:                                 1          2          -                      
+#         % Hit:                                         50.00%        100          -                      
+#     Coverpoint c11                                    100.00%        100          -    Covered              
+#         covered/total bins:                                 2          2          -                      
+#         missing/total bins:                                 0          2          -                      
+#         % Hit:                                        100.00%        100          -                      
+#  Covergroup instance \/testbench/coverage/test_instr  
+#                                                        91.66%        100          -    Uncovered            
+#     covered/total bins:                                    10         11          -                      
+#     missing/total bins:                                     1         11          -                      
+#     % Hit:                                             90.90%        100          -                      
+#     Coverpoint c5                                     100.00%        100          -    Covered              
+#         covered/total bins:                                 2          2          -                      
+#         missing/total bins:                                 0          2          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin read_1                                       1026          1          -    Covered              
+#         bin read_0                                        523          1          -    Covered              
+#     Coverpoint c6                                     100.00%        100          -    Covered              
+#         covered/total bins:                                 2          2          -                      
+#         missing/total bins:                                 0          2          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin r_rst_n_high                                   25          1          -    Covered              
+#         bin r_rst_n_low                                  1536          1          -    Covered              
+#     Coverpoint c7                                     100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin rd_data                                       510          1          -    Covered              
+#     Coverpoint c8                                     100.00%        100          -    Covered              
+#         covered/total bins:                                 2          2          -                      
+#         missing/total bins:                                 0          2          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin fifo_empty_1                                   12          1          -    Covered              
+#         bin fifo_empty_0                                 1549          1          -    Covered              
+#     Coverpoint c9                                      50.00%        100          -    Uncovered            
+#         covered/total bins:                                 1          2          -                      
+#         missing/total bins:                                 1          2          -                      
+#         % Hit:                                         50.00%        100          -                      
+#         bin fifo_full_1                                     0          1          -    ZERO                 
+#         bin fifo_full_0                                  1561          1          -    Covered              
+#     Coverpoint c11                                    100.00%        100          -    Covered              
+#         covered/total bins:                                 2          2          -                      
+#         missing/total bins:                                 0          2          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin write_1                                       510          1          -    Covered              
+#         bin write_0                                      1051          1          -    Covered              
+# 
+# TOTAL COVERGROUP COVERAGE: 91.66%  COVERGROUP TYPES: 2
+# 
+# ASSERTION RESULTS:
+# --------------------------------------------------------------------
+# Name                 File(Line)                   Failure      Pass 
+#                                                   Count        Count
+# --------------------------------------------------------------------
+# /testbench/topdesign/write_ptr_inst/a_reset
+#                      write_ptr.sv(44)                   0          1
+# /testbench/topdesign/write_ptr_inst/a_full
+#                      write_ptr.sv(53)                   0          1
+# /testbench/topdesign/read_ptr_inst/a_rreset
+#                      read_ptr.sv(46)                    0          1
+# /testbench/topdesign/read_ptr_inst/a_empty
+#                      read_ptr.sv(55)                    0          1
+# /testbench_sv_unit/generator/main/#anonblk#41483716#24#4#/#ublk#41483716#25/immed__31
+#                      gen_fifo.sv(31)                    0          1
+# /testbench_sv_unit/generator/main/#anonblk#41483716#24#4#/#ublk#41483716#25/immed__28
+#                      gen_fifo.sv(28)                    0          1
+# 
+# Total Coverage By Instance (filtered view): 95.83%
